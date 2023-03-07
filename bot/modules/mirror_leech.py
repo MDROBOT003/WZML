@@ -268,7 +268,7 @@ def _mirror_leech(bot, message, isZip=False, extract=False, isQbit=False, isLeec
 		                                         auth, ratio, seed_time)).start()
 
     if multi > 1:
-        sleep(120)
+        sleep(80)
         nextmsg = type('nextmsg', (object, ), {'chat_id': message.chat_id, 'message_id': message.reply_to_message.message_id + 1})
         msg = message.text.split(maxsplit=mi+1)
         msg[mi] = f"{multi - 1}"
