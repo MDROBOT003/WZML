@@ -764,7 +764,7 @@ try:
     FSUB_CHANNEL_ID = int(FSUB_CHANNEL_ID)
 except KeyError:
     log_info("CHANNEL_ID not provided! Using default id of @WeebZone_updates")
-    FSUB_CHANNEL_ID = 
+    FSUB_CHANNEL_ID = ""
 try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
     if len(TOKEN_PICKLE_URL) == 0:
